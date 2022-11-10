@@ -14,4 +14,12 @@ ToDo
 - [ ] Printing ticket page
     - [ ] page will allow to print to printer and hopefully later a thermal printer.
 
-Code curently runs, you will need edit dbconfig.py
+Code curently runs, you will need to make and edit dbconfig.py
+
+```python
+user=""
+password=""
+host="127.0.0.1"
+port="5432"
+database=""
+```
