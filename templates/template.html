@@ -26,7 +26,13 @@
 			</nav>
 		</header>
 		<main class="text-center">
-			<h2>Welcome {{ uid }}</h2>
+			<form action="http://localhost:8080/" method="post">
+				<h2>Welcome {{ uid }}</h2>
+				<label for="uID">ID:</label>
+				<input type="hidden" id="uName" name="uName" value="{{ uid }}">
+				<input type="number" id="uID" name="uID" autocomplete="off"><br>
+				<input type="submit" value="Submit">
+			</form>
 		</main>
 		<footer>
 		<p class="text-center text-muted"></p>
