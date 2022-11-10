@@ -14,3 +14,4 @@ ToDo
 - [ ] Printing ticket page
     - [ ] page will allow to print to printer and hopefully later a thermal printer.
 
+Code curently runs, you will need edit dbconfig.py
