@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<style>
+			body 	{ padding-top:50px; }
+		</style>
+		<title>Space Station</title>
+	</head>
+	<body class="container">
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="/">HackRVA Space Station</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<!--<li><a href="/">Lookup/Edit</a></li>
+						<li><a href="/">Zones</a></li>
+						<li><a href="/">Whats in use</a></li>-->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="text-center">
+			<form action="http://localhost:8080/" method="post">
+				<h2>Please fill out this form.</h2>
+				<input type="hidden" id="uid" name="uid" value="{{ uID }}">
+				<label for="fname">First Name:</label></br>
+				<input type="text" id="fname" name="firstname" required autocomplete="off"><br>
+				<label for="lname">Last Name:</label></br>
+				<input type="text" id="lname" name="lasttname" required autocomplete="off"><br>
+				<label for="description">Description of items:</label></br>
+				<textarea id="description" name="description" rows="4" cols="50" required autocomplete="off"></textarea></br>
+				<label for="description">Is it ok to move the items if they are in the way?</label></br>
+				<input type="radio" id="htmlyes" name="oktomove" value="yes" required autocomplete="off">
+				<label for="htmlyes">Yes</label><br>
+				<input type="radio" id="oktmno" name="oktomove" value="no" required autocomplete="off">
+				<label for="oktmno">No</label><br>
+				<h3>How would you like to be contacted about issues? One or all can be filled out.</h3>
+				<label for="lname">Preferred Email:</label></br>
+				<input type="text" id="email" name="emailaddress" autocomplete="off"><br>
+				<label for="phone">Preferred Phone number (format (555)-555-5555):</label><br>
+				<input type="tel" id="phone" name="phonenumber" placeholder="555-555-5555" autocomplete="off"><br>
+				<label for="lname">Slack Username:</label></br>
+				<input type="text" id="slackuname" name="slackusername" autocomplete="off"><br>
+				<input type="submit" value="Print">
+			</form>
+		</main>
+		<footer>
+		<p class="text-center text-muted"></p>
+		</footer>
+	</body>
+</html>
